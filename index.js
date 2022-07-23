@@ -1,4 +1,4 @@
-//detectin button press
+//detecting button press
 var numberOfDrumButton = document.querySelectorAll(".drum").length;
 for (i = 0; i < numberOfDrumButton; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
@@ -65,12 +65,13 @@ function makeSound(key){
 
 
 }
-function buttonAnnimation(currnentKey){
-    var activeButton = document.querySelector("." + currnentKey);
-    activeButton.classList.add("pressed");
 
-    setTimeout(function() {
-        activeButton.classList.remove("pressed");
+//function buttonAnnimation(currnentKey){
+  //  var activeButton = document.querySelector("." + currnentKey);
+    //activeButton.classList.add("pressed");
+
+    //setTimeout(function() {
+      //  activeButton.classList.remove("pressed");
         
-    }, 100);
-}
+   // }, 100);
+//}
